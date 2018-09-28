@@ -68,8 +68,8 @@ def describe_boolean_1d(series):
     mean = series.mean()
     names = []
     result = []
-    names += ['top', 'freq', 'type', 'mean']
-    result += [top, freq, base.TYPE_BOOL, mean]
+    names += ['freq', 'type', 'mean']
+    result += [freq, base.TYPE_BOOL, mean]
 
     return pd.Series(result, index=names, name=series.name)
 
